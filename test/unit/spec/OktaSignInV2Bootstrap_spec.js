@@ -124,17 +124,19 @@ describe('OktaSignIn v2 bootstrap', function() {
   describe('Interaction code flow', function() {
     let responses;
     let interactionHandle;
+    let interactResponse;
 
     beforeEach(function() {
       interactionHandle = 'fake_interaction_handle';
-      responses = [
-        {
-          state: 200,
-          responseType: 'json',
-          response: {
-            'interaction_handle': interactionHandle
-          },
+      interactResponse = {
+        state: 200,
+        responseType: 'json',
+        response: {
+          'interaction_handle': interactionHandle
         },
+      };
+      responses = [
+        interactResponse,
         idxResponse
       ];
     });
@@ -459,34 +461,32 @@ describe('OktaSignIn v2 bootstrap', function() {
         });
       });
 
-      itp('Clears when user chooses "cancel" action', () => {
+      itp('Clears when user chooses "cancel" action', async () => {
         setupLoginFlow({
           clientId,
           redirectUri,
           useInteractionCodeFlow: true
         }, [
+          interactResponse,
           idxVerifyPassword,
-          // cancel response
-          {
-            state: 200,
-            responseType: 'json',
-            response: {}
-          }
+          interactResponse,
+          idxResponse
         ]);
-        // simulate saved transaction
-        jest.spyOn(signIn.authClient.transactionManager, 'clear').mockImplementation(() => { });
-        jest.spyOn(signIn.authClient.transactionManager, 'exists').mockReturnValue(true);
-        jest.spyOn(signIn.authClient.transactionManager, 'load').mockReturnValue(mockTransactionMeta);
         render();
 
-        return Expect.wait(() => {
-          return $('.siw-main-body').length === 1;
-        }).then(function() {
-          expect(signIn.authClient.transactionManager.clear).not.toHaveBeenCalled();
-          const $signOut = $('a[data-se="cancel"]');
-          $signOut.click();
-          expect(signIn.authClient.transactionManager.clear).toHaveBeenCalled();
+        await Expect.wait(() => {
+          return $('.siw-main-view.mfa-verify-password').length === 1;
         });
+        jest.spyOn(signIn.authClient.transactionManager, 'clear');
+        const $signOut = $('a[data-se="cancel"]');
+        $signOut.click();
+        expect(signIn.authClient.transactionManager.clear).toHaveBeenCalled(); // assert data is cleared synchronously
+
+        // login flow will restart
+        await Expect.wait(() => {
+          return $('.siw-main-view.primary-auth').length === 1;
+        });
+        
       });
     }); // Clear transaction
   }); // interaction code
