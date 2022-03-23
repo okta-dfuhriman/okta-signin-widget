@@ -248,7 +248,7 @@ export default Controller.extend({
         throw resp.error; // caught and handled in this function
       }
       // If the last request did not succeed, show errors on the current form
-      if (resp.rawIdxState.requestDidSucceed === false) {
+      if (resp.requestDidSucceed === false) {
         this.showFormErrors(model, resp, this.formView.form);
         return;
       }

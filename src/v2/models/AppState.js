@@ -321,8 +321,8 @@ export default Model.extend({
    */
   _isChallengeAuthenticatorPoll(transformedResponse, previousRawState) {
     const isSameExceptMessages = _.isEqual(
-      _.nestedOmit(transformedResponse.idx.rawIdxState, ['expiresAt', 'refresh', 'stateHandle', 'requestDidSucceed']),
-      _.nestedOmit(previousRawState, ['expiresAt', 'refresh', 'stateHandle', 'requestDidSucceed', 'messages']));
+      _.nestedOmit(transformedResponse.idx.rawIdxState, ['expiresAt', 'refresh', 'stateHandle']),
+      _.nestedOmit(previousRawState, ['expiresAt', 'refresh', 'stateHandle', 'messages']));
 
     const isChallengeAuthenticator = this.get('currentFormName') === 'challenge-authenticator';
     const isCurrentAuthenticatorEmail = this.get('currentAuthenticatorEnrollment')?.key === AUTHENTICATOR_KEY.EMAIL;
