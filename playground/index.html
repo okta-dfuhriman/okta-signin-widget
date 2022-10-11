@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Okta Sign-in Widget Playground</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/okta-sign-in.css" type="text/css" rel="stylesheet" />
   </head>
-  
-  <body>
-    <div id="okta-login-container"></div>
+
+  <body class="flex flex-column">
+    <div class="content flex flex-column">
+      <div class="sub-content flex flex-column">
+        <div class="gbt-logo">
+          <img class="gbt-logo" src="https://cdn.amexgbt.com/oktab/images/gbt_logo_desktop.png" alt="GBT Logo">
+        </div>
+        <div class="banner-heading" data-i18n="appBannerHeading">Your journey starts here</div>
+        <div class="banner-content" data-i18n="appBannerContent">Log into your account to take charge of your travel.
+        </div>
+        <div class="banner-innercontent" data-i18n="appBannerInnerContent">Find everything you need in one place - a
+          place
+          that is available on any device anywhere no matter where you're traveling.</div>
+      </div>
+      <div id="okta-login-container"></div>
+    </div>
     <script src="/js/okta-sign-in.js"></script>
     <script src="/js/okta-plugin-a11y.js"></script>
     <script src="/playground.bundle.js"></script>
   </body>
+
 </html>
