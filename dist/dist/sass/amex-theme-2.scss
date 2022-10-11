@@ -1,0 +1,874 @@
+.mobile-code-width {
+  width: 203px !important;
+  margin: 5px 0 0 0 !important;
+}
+
+#okta-sign-in.no-beacon .auth-content {
+  padding-top: 80px !important;
+}
+
+.registration-complete .back-btn {
+  display: none;
+}
+
+#okta-sign-in .o-form-label {
+  margin: 0;
+  padding: 0;
+}
+
+#okta-sign-in .o-form-label > label {
+  margin-left: 6px;
+  padding: 0;
+  font-size: 10px;
+  height: 14px;
+  font-family: BentonSans-Regular;
+  width: 100%;
+  color: #53565a;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+#okta-sign-in .o-form-button-bar {
+  padding: 0 0 32px;
+}
+
+#okta-sign-in .o-form .o-form-label {
+  display: block;
+}
+
+#okta-sign-in .o-form .o-form-label:active {
+  border-bottom: green !important;
+}
+
+#okta-sign-in {
+  margin-top: 20px !important;
+}
+
+.banner-content {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  max-width: 480px !important;
+}
+
+.banner-innercontent {
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  font-size: 16px;
+  text-align: left;
+  max-width: 480px !important;
+}
+
+.okta-widget {
+  z-index: 99;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 72px 20px 72px !important;
+}
+
+.footer-copyrights {
+  padding-bottom: 20px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: normal;
+  font-family: Bentonsans;
+}
+
+.footer-terms {
+  line-height: 1.5;
+  color: #000000;
+  font-family: Bentonsans;
+}
+
+.floating-label {
+  position: absolute !important;
+  font-size: 10px !important;
+  top: -4px !important;
+  color: #53565a !important;
+  padding-left: 6px !important;
+}
+
+input[type='tel'] {
+  border-bottom: 1px solid gray;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 375px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  #okta-sign-in .registration .okta-form-label.o-form-label label {
+    margin-top: 17px;
+  }
+
+  .mobile-codes {
+    width: 120px !important;
+    float: left;
+    margin-top: 33px !important;
+    padding-right: 5px !important;
+  }
+
+  .mobile-code-width {
+    width: 213px !important;
+    margin: 8px 0 0 0 !important;
+  }
+}
+
+@media (max-width: 540px) {
+  #okta-sign-in.no-beacon .auth-content {
+    padding-top: 20px !important;
+  }
+
+  #okta-sign-in .enroll-choices .o-form-head + .o-form-explain {
+    margin: 0 0px 0 6px;
+  }
+
+  #okta-sign-in .enroll-choices .o-form-fieldset-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .enroll-factor-description p {
+    width: 180px;
+  }
+
+  #okta-sign-in.auth-container .enroll-choices .button-primary {
+    width: 180px !important;
+  }
+
+  #okta-sign-in .enroll-factor-row .enroll-factor-label {
+    min-width: 210px;
+  }
+
+  #okta-sign-in .registration .okta-form-label.o-form-label label {
+    margin-top: 17px;
+  }
+
+  .mobile-codes {
+    width: 120px !important;
+    float: left;
+    margin-top: 33px !important;
+    padding-right: 5px !important;
+  }
+
+  .mobile-code-width {
+    width: 158px !important;
+    margin: 8px 0 0 0 !important;
+  }
+
+  .mfa-email-info1 {
+    width: 200px;
+  }
+
+  .mfa-email-info {
+    width: 260px;
+  }
+
+  .mfa-send-email-content {
+    margin: 0 0 26px 21px !important;
+  }
+
+  #okta-sign-in .auth-content #password-reset-email-message {
+    margin: 0px 0 40px 20px;
+  }
+
+  #okta-sign-in .auth-content .mailsent-msg {
+    margin: 0 0 25px 20px;
+  }
+
+  .mobile-codes .niceCountryInputMenuDropdown {
+    margin: 0 -10px 0 0 !important;
+  }
+
+  .mobile-codes .niceCountryInputMenuDropdownContent {
+    width: 240px !important;
+    position: absolute !important;
+    margin: 40px 0 0 0 !important;
+  }
+
+  .mobile-codes .niceCountryInputMenuDefaultText span {
+    position: absolute;
+    margin-top: 3px !important;
+    margin-left: 5px !important;
+  }
+
+  .mobile-codes .niceCountryInputMenuDropdownContent a span {
+    position: absolute;
+    margin-top: 3px !important;
+    margin-left: 170px !important;
+  }
+
+  .mobile-codes .niceCountryInputMenuDropdownContent a label {
+    position: absolute;
+    margin-top: -27px !important;
+    margin-left: 32px !important;
+    display: block;
+  }
+
+  #okta-sign-in.auth-container.main-container {
+    width: 100%;
+  }
+
+  .content {
+    background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .sub-content {
+    margin: 42px 0 0 0;
+    text-align: center;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 36px !important;
+    margin-right: 36px !important;
+    text-align: center !important;
+  }
+
+  .banner-content {
+    margin-top: 32px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 36px !important;
+    margin-right: 36px !important;
+    color: #000000;
+    text-align: center;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 20px !important;
+    font-size: 14px;
+    line-height: 1.5rem !important;
+    margin-left: 36px !important;
+    margin-right: 36px !important;
+    color: #000000;
+    text-align: center;
+  }
+
+  .footer {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding: 20px 0 !important;
+  }
+
+  .footer-terms {
+    line-height: 16px;
+    color: #000000;
+    font-family: Bentonsans;
+    font-weight: normal;
+    margin: 0 26px 0 29px;
+  }
+
+  .clickable {
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+  .footer-links.flex.flex-column {
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    line-height: 24px;
+  }
+
+  .footer-copyrights {
+    padding-bottom: 20px;
+    color: #000000;
+    line-height: 16px;
+    font-weight: normal;
+    margin: 0 26px 0 29px;
+    font-family: Bentonsans;
+  }
+
+  .show-in-mobile {
+    display: flex !important;
+  }
+
+  .hide-in-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1112px) {
+  .sub-content {
+    text-align: left;
+    margin: 42px 20% 0 20%;
+    width: 30%;
+  }
+
+  #okta-login-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #okta-sign-in {
+    margin-top: 140px !important;
+  }
+
+  .content {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  #okta-sign-in {
+    margin-top: -40px !important;
+  }
+
+  .banner-heading {
+    margin-top: 60px !important;
+    font-size: 3rem;
+  }
+
+  .sub-content {
+    text-align: left;
+    margin: 42px 20% 0 20%;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .banner-content {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 72px 20px 72px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #okta-login-container {
+    position: fixed;
+    min-width: 375px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: start !important;
+    padding-top: 100px !important;
+  }
+
+  .mobile-code-width {
+    width: 213px !important;
+    margin: 5px 0 0 0 !important;
+  }
+}
+
+#okta-sign-in .o-form .input-fix .password-toggle .eyeicon {
+  top: 50% !important;
+}
+
+#okta-sign-in .registration .o-form .input-fix .password-toggle .eyeicon {
+  top: 35% !important;
+}
+
+#okta-sign-in .primary-auth .o-form .input-fix .password-toggle .eyeicon {
+  top: 35% !important;
+}
+
+#okta-sign-in .infobox > .icon {
+  top: 3px !important;
+}
+
+#okta-sign-in .o-form-input {
+  margin-bottom: 8px;
+}
+
+#okta-login-container .account-unlock-email-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 47px 0 48px;
+}
+
+#okta-login-container .account-unlocked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 47px 0 48px;
+}
+
+#okta-login-container .account-unlock-email-sent .o-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#okta-login-container .account-unlocked .o-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#okta-login-container .account-unlock-email-sent .button.button-primary.button-wide.link-button {
+  width: 255px !important;
+  vertical-align: middle;
+  display: none;
+}
+
+#okta-sign-in.auth-container .account-unlock-email-sent .o-form-content p.okta-form-subtitle > ul > li {
+  font-family: BentonSans;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+#okta-sign-in.auth-container .account-unlocked .button.button-primary.button-wide.link-button {
+  width: 255px !important;
+  text-align: center;
+  line-height: 40px !important;
+  margin: 0 0 40px 0;
+  font-size: 16px !important;
+  font-family: BentonSans;
+}
+
+#okta-sign-in.auth-container .account-unlocked h2 {
+  color: #008767;
+  display: flex;
+  font-size: 16px;
+  width: 249px;
+  text-align: left;
+  font-weight: normal;
+  margin: 8px 0 0 36px;
+  font-family: BentonSans;
+}
+
+#okta-sign-in.auth-container .account-unlock h2 {
+  display: flex;
+}
+
+.Style-Icons-Glyphs-Icons-Status-Warning-Filled {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 -34px 36px !important;
+}
+
+#okta-sign-in.auth-container .account-unlock h2 p {
+  margin: -2px 70px 30px;
+  font-family: BentonSans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b42c01;
+  width: 249px;
+  height: 96px;
+  font-weight: normal;
+  text-align: left;
+}
+
+#okta-sign-in.auth-container .account-unlocked p {
+  color: #333333;
+  display: flex;
+  font-size: 16px;
+  width: 280px;
+  margin: 16px 0 64px 58px;
+  text-align: left;
+  font-family: BentonSans;
+  font-weight: normal;
+}
+
+.Style-Icons-Glyphs-Icons-Status-Success-Default {
+  width: 24px;
+  height: 24px;
+  margin: 0 250px -32px 0 !important;
+}
+
+#okta-sign-in p.okta-form-subtitle > ul > li {
+  padding-bottom: 20px;
+  color: black;
+  max-width: 280px;
+  text-align: center;
+  display: inline-block;
+}
+
+#okta-sign-in p.okta-form-subtitle > ul > li > b {
+  font-weight: 900;
+}
+
+#okta-sign-in .o-form-label {
+  white-space: nowrap;
+}
+
+#okta-sign-in input[type='text'],
+#okta-sign-in input[type='password'] {
+  padding-left: 8px !important;
+}
+
+#okta-sign-in .registration-complete .desc > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#okta-sign-in .registration-complete .o-form-fieldset-container .title-icon {
+  display: none;
+}
+
+#okta-sign-in .registration-complete .o-form-fieldset-container .container h2 {
+  font-family: BentonSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+#okta-sign-in .registration-complete .o-form-fieldset-container .container h2 > b {
+  font-weight: bolder;
+}
+
+#okta-sign-in .registration-complete .desc > ul > li {
+  padding-bottom: 48px;
+  max-width: 280px;
+  text-align: center;
+  font-family: BentonSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#okta-sign-in .registration-complete .desc > ul > li > b {
+  font-weight: 900;
+}
+
+#okta-sign-in .o-form-has-errors .infobox-error {
+  font-family: BentonSans;
+  font-size: 16px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #b42c01;
+  text-align: left;
+  width: 98% !important;
+  padding: 0 47px 0 47px !important;
+}
+
+#okta-sign-in .infobox > .icon {
+  top: 0 !important;
+  margin: 0 8px 24px 24px !important;
+}
+
+.okta-form-infobox-error .infobox .infobox-error {
+  font-family: BentonSans;
+  font-size: 16px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #b42c01;
+  text-align: left;
+  width: 375px !important;
+  padding: 0 47px 0 22px !important;
+}
+
+#okta-sign-in .chzn-container {
+  width: 100% !important;
+}
+
+.mobile-codes {
+  width: 100px !important;
+}
+
+#okta-sign-in .infobox {
+  padding: 12px 18px 12px 0 !important;
+}
+
+#okta-sign-in .infobox-warning:before {
+  display: none !important;
+}
+
+#okta-sign-in .needhelp {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: BentonSans;
+}
+
+#needHelpDialog > div > div.niceCountryInputSelector.country-dropdown > div.niceCountryInputMenu > span > a > a > img {
+  display: none;
+}
+
+#okta-sign-in.auth-container .button-primary[data-se='back-button'] {
+  width: 255px !important;
+}
+
+#okta-sign-in.auth-container .password-reset-email-sent .button-primary[data-se='back-button'] {
+  display: none;
+}
+
+.o-form-error-container.o-form-has-errors {
+  text-align: left;
+}
+
+.reset-password-policies {
+  margin-top: 0px !important;
+}
+
+.reset-password-policies > ul > li {
+  font-size: 10px !important;
+  font-family: BentonSans !important;
+  color: #53565a !important;
+  margin-left: 6px !important;
+}
+
+.required-fields-label {
+  display: none;
+}
+
+.okta-form-infobox-error p {
+  margin-left: 20px !important;
+  text-align: left !important;
+}
+
+.okta-form-infobox-error p ul {
+  margin-left: 0px !important;
+}
+
+#okta-sign-in .mfa-verify .mfa-verify-email h2 {
+  display: block;
+  margin: 2rem 0;
+  font-size: 14px;
+  font-family: BentonSans;
+  color: #000000 !important;
+  font-weight: normal !important;
+}
+
+#okta-sign-in .o-form-input-name-answer input[name='answer'] {
+  border-bottom: 1px solid #006fcf !important;
+}
+
+#okta-sign-in .mfa-verify-email .mfa-email-sent-content {
+  text-align: center;
+  font-size: 14px;
+  font-family: BentonSans;
+  color: #000000 !important;
+}
+
+#okta-sign-in .mfa-verify-email .resend-email-infobox {
+  margin-bottom: 48px;
+}
+
+#okta-sign-in .mfa-verify-email .resend-email-infobox .infobox-warning p span {
+  font-size: 14px;
+  font-family: BentonSans;
+  color: #000000 !important;
+}
+
+#okta-sign-in .o-form .input-fix input[type='text'],
+#okta-sign-in.auth-container .okta-form-input-field input[type='password'] {
+  height: 24px;
+  padding: 0 0 6px 6px;
+  border-bottom: 1px solid #53565a !important;
+  font-family: BentonSans !important;
+  color: #000000 !important;
+}
+
+#okta-sign-in .o-form .input-fix input[type='text'],
+#okta-sign-in.auth-container .okta-form-input-field input[type='password'],
+#okta-sign-in.auth-container.main-container .primary-auth .password-with-toggle {
+  height: 24px !important;
+  font-family: BentonSans !important;
+  color: #000000 !important;
+}
+
+#okta-sign-in .registration .subschema .subschema-error {
+  font-size: 10px !important;
+  font-family: BentonSans !important;
+  margin-left: 8px;
+}
+
+#okta-sign-in .registration .subschema .subschema-satisfied {
+  font-size: 10px !important;
+  font-family: BentonSans !important;
+  margin-left: 8px;
+  color: #53565a !important;
+}
+
+#okta-sign-in .registration .o-form-error-container .okta-form-infobox-error p li {
+  width: 249px;
+}
+
+.first-time {
+  padding: 0px 40px 32px 40px !important;
+}
+
+.first-time .info-content {
+  display: inline-block !important;
+  color: #333333;
+}
+
+.first-time .icon-info {
+  background: url('https://cdn.amexgbt.com/ciapcdn/images/status-info.png') no-repeat !important;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+#okta-sign-in .password-reset .o-form .input-fix,
+#okta-sign-in .o-form .textarea-fix {
+  height: 20px !important;
+}
+
+.first-time-here {
+  font-family: BentonSans !important;
+  font-weight: 500 !important;
+}
+
+#okta-sign-in .o-form-label-top .registration.o-form-input,
+#okta-sign-in .o-form-label-top .o-form-label {
+  width: 50% !important;
+}
+
+.mobile-codes .niceCountryInputMenuDropdownContent {
+  width: 320px;
+  position: absolute !important;
+  margin: 40px 0 0 0 !important;
+}
+
+.mobile-codes {
+  width: 33% !important;
+}
+
+#okta-sign-in .infobox h2 + *,
+#okta-sign-in .infobox h3 + *,
+#okta-sign-in .infobox li + *,
+#okta-sign-in .infobox ol + *,
+#okta-sign-in .infobox p + *,
+#okta-sign-in .infobox ul + * {
+  margin-top: 0 !important;
+}
+
+#okta-sign-in.auth-container .password-reset-email-sent .okta-form-subtitle {
+  font-family: BentonSans !important;
+  color: #000000 !important;
+}
+
+#okta-login-container.login-container {
+  margin-top: 0px !important;
+}
+
+#okta-sign-in .enroll-factor-row .enroll-factor-description {
+  font-family: BentonSans;
+}
+
+#okta-login-container.login-container {
+  margin-top: 0px !important;
+}
+
+#okta-sign-in .enroll-choices .o-form-head + .o-form-explain {
+  width: auto !important;
+  font-family: BentonSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000 !important;
+  margin: 18px;
+}
+
+.enroll-email .mfa-email-info1 {
+  text-align: center;
+  font-family: BentonSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 0 40px !important;
+  padding-bottom: 40px !important;
+  width: auto !important;
+}
+
+.enroll-email .mfa-email-info {
+  text-align: center;
+  margin-bottom: 64px !important;
+  font-family: BentonSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 0 40px !important;
+  width: auto !important;
+}
+
+#okta-sign-in.auth-container .button-primary {
+  text-transform: capitalize;
+}
+
+.enroll-factor-description p {
+  width: auto !important;
+}
+
+.enroll-activate-email .o-form-head {
+  display: block !important;
+}
+
+.enroll-activate-email {
+  text-align: center;
+}
+
+#okta-sign-in .enroll-activate-email .enroll-activate-email-content {
+  margin-bottom: 64px;
+}

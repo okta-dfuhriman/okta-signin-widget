@@ -1,0 +1,924 @@
+/* stylelint-disable selector-max-id */
+@use 'common/shared/helpers/mixins';
+
+/* Media Queries */
+
+@media (min-width: 320px) {
+  #okta-login-container {
+    min-width: 320px;
+  }
+
+  .content {
+    background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .sub-content {
+    margin: 42px 0 0 0;
+    text-align: center;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .banner-content {
+    margin-top: 32px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 20px !important;
+    line-height: 1.5rem !important;
+  }
+
+  .footer {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .clickable {
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+  .footer-links.flex.flex-column {
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    line-height: 24px;
+  }
+
+  .footer-copyrights {
+    padding-bottom: 20px;
+    line-height: normal;
+  }
+
+  .show-in-mobile {
+    display: flex !important;
+  }
+
+  .hide-in-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 375px) {
+  #okta-login-container {
+    min-width: 375px;
+  }
+
+  .content {
+    background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .sub-content {
+    margin: 42px 0 0 0;
+    text-align: center;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .banner-content {
+    margin-top: 32px;
+    font-size: 14px;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+
+  .footer {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+  }
+
+  .footer-links.flex.flex-column {
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  .footer-copyrights {
+    padding-bottom: 20px;
+    line-height: normal;
+  }
+
+  .show-in-mobile {
+    display: flex !important;
+  }
+
+  .clickable {
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+  .hide-in-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #okta-login-container {
+    min-width: 375px;
+  }
+
+  #okta-sign-in.auth-container.main-container .margin-btm-30 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    background-color: transparent;
+  }
+
+  .sub-content {
+    margin: 42px 20% 0 20%;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center !important;
+  }
+
+  .banner-content {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center !important;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    text-align: center !important;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 72px 20px 72px;
+  }
+
+  .clickable {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .show-in-mobile {
+    display: none !important;
+  }
+
+  .hide-in-mobile {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    margin: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .ui-dialog {
+    top: 235px !important;
+    left: 59px !important;
+    border: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  #okta-login-container {
+    min-width: 375px;
+    margin: 40px 490px 41px 205px !important;
+  }
+
+  .ui-dialog {
+    top: 299px !important;
+    left: 236px !important;
+    border: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #okta-login-container {
+    position: fixed;
+    min-width: 375px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .content {
+    background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex: 1;
+    background-position: center;
+    background-color: transparent;
+    margin-right: 375px;
+  }
+
+  .sub-content {
+    margin: 42px 20% 0 20%;
+    text-align: left;
+  }
+
+  .banner-heading {
+    margin-top: 60px !important;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left !important;
+  }
+
+  .banner-content {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left !important;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    text-align: left !important;
+  }
+
+  .okta-widget {
+    z-index: 99;
+  }
+
+  .footer {
+    text-align: center;
+    width: calc(100% - 400px);
+    padding: 20px 72px 20px 72px;
+  }
+
+  .clickable {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 45px;
+    min-height: 30px;
+  }
+
+  .show-in-mobile {
+    display: none !important;
+  }
+
+  .hide-in-mobile {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner-heading {
+    margin-top: 60px !important;
+    font-size: 3rem;
+  }
+
+  .sub-content {
+    text-align: left;
+    margin: 42px 20% 0 20%;
+  }
+
+  .banner-heading {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left !important;
+  }
+
+  .banner-content {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left !important;
+  }
+
+  .banner-innercontent {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    text-align: left !important;
+  }
+
+  .okta-widget {
+    z-index: 99;
+  }
+
+  .footer {
+    text-align: center;
+    width: calc(100% - 400px);
+    padding: 20px 72px 20px 72px;
+  }
+
+  .clickable {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 45px;
+    min-height: 30px;
+  }
+}
+
+/* @media (min-width: 1280px) and (max-width: 1280px) {
+        #okta-login-container {
+            top: unset !important;
+        }
+
+        #okta-sign-in {
+            margin-bottom: 20px !important;
+        }
+    } */
+
+@media (min-width: 1920px) {
+  /* #okta-sign-in {
+        margin-top: -120px !important;
+    } */
+
+  #okta-login-container {
+    position: fixed;
+    min-width: 375px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .banner-heading {
+    margin-top: 160px !important;
+  }
+
+  .footer {
+    padding: 20px 72px 20px 72px;
+  }
+
+  .ui-dialog {
+    top: 347px !important;
+    left: 812px !important;
+    border: none !important;
+  }
+}
+
+@font-face {
+  font-family: 'BabelStone Flags';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.amexgbt.com/fonts/BabelStoneFlags.woff') format('woff'),
+    url('https://cdn.amexgbt.com/fonts/BabelStoneFlags.woff2') format('woff2');
+}
+
+.babelstone-symbol-font {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'BabelStone Flags';
+  font-size: 20px;
+  width: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+::placeholder {
+  color: #53565a;
+  font-size: 14px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: BentonSans;
+  background-color: #f9f9f9;
+  min-width: 320px;
+}
+
+.content {
+  background-image: url(https://cdn.amexgbt.com/oktab/css/default/hero_image_login_flow_1920px.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-position: center;
+  background-color: transparent;
+
+  flex: 1;
+}
+
+.sub-content {
+  margin: 42px 20% 0 20%;
+  text-align: left;
+}
+
+.banner-heading {
+  color: #00175a;
+}
+
+.banner-content {
+  height: 40px;
+  margin: 40px 0 0 0;
+  font-family: BentonSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#okta-sign-in .focused-input,
+#okta-sign-in .link.help:focus {
+  box-shadow: 0 0 0px #ffffff;
+}
+
+#okta-sign-in .o-form .input-fix .password-toggle .eyeicon {
+  padding: 2px 8px;
+}
+
+div.o-form-input > span {
+  border-width: 0 !important;
+  border-bottom-width: 1px !important;
+  border-radius: 0 !important;
+}
+
+#okta-sign-in .visibility-16:before {
+  content: '\e022';
+  color: #00f;
+  font-size: 20px;
+  font-family: okticon;
+}
+
+#okta-sign-in .visibility-off-16:before {
+  content: '\e0c3';
+  color: #00f;
+  font-size: 20px;
+  font-family: okticon;
+}
+
+#okta-sign-in .o-form .o-form-label {
+  text-align: left;
+}
+
+#okta-sign-in .o-form .custom-checkbox label {
+  text-align: left;
+}
+
+#okta-sign-in.auth-container .okta-sign-in-header {
+  border-bottom-color: #ddd;
+  display: none;
+}
+
+#okta-sign-in.auth-container .chzn-single {
+  border-color: white;
+  border-bottom: 1px solid #777;
+}
+
+#okta-sign-in .auth-footer {
+  text-align: center;
+  /* margin-top: 4rem !important; */
+}
+
+#okta-sign-in.auth-container.main-container {
+  background-color: #fff;
+  border-color: #ddd #ddd #d8d8d8;
+  border-width: 0;
+}
+
+.auth-content {
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.auth-container {
+  box-shadow: none !important;
+}
+
+.o-form-button-bar {
+  display: flex !important;
+  justify-content: center !important;
+  box-shadow: none;
+}
+
+.okta-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.button-primary {
+  background: #006fcf !important;
+  border: solid #006fcf 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  padding: 5px !important;
+  width: 50% !important;
+  align-self: center;
+}
+
+.button-ghost {
+  background: #fff;
+  border: solid #006fcf 1px;
+  color: #006fcf !important;
+  height: 40px;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.email-button {
+  display: flex !important;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: auto !important;
+}
+
+.button-ghost:hover {
+  text-decoration: none;
+  border: solid #08f 1px;
+  color: #08f;
+  cursor: pointer;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 400px;
+  padding: 0 20px;
+}
+
+.bottom-container > * {
+  margin-bottom: 30px;
+}
+
+.bottom-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-container > div > h3 {
+  margin-bottom: 15px !important;
+}
+
+.bottom-container > div > h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.bottom-container {
+  display: none;
+}
+
+#okta-sign-in .o-form-head {
+  display: none;
+}
+
+#okta-sign-in .o-form .o-form-label {
+  display: none;
+}
+
+#okta-sign-in .o-form .input-fix input[type='text'],
+#okta-sign-in.auth-container .okta-form-input-field input[type='password'],
+#okta-sign-in.auth-container.main-container .primary-auth .password-with-toggle {
+  height: 44px;
+  border-bottom: 1px solid #777;
+  color: #000000 !important;
+  font-size: 14px !important;
+}
+
+#okta-sign-in .custom-checkbox {
+  display: none;
+}
+
+#okta-sign-in .o-form-button-bar {
+  padding: 0 0 62px;
+}
+
+.email-button {
+  margin-top: 64px !important;
+  margin-bottom: 64px !important;
+}
+
+#okta-sign-in .visibility-off-16:before {
+  content: '';
+}
+
+#okta-sign-in .visibility-off-16 {
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/765C75A0-19E6-4FCD-A1A6-D5DFFDC89CD6.svg')
+    no-repeat;
+  opacity: 1 !important;
+}
+
+#okta-sign-in .visibility-16:before {
+  content: '';
+}
+
+#okta-sign-in .visibility-16 {
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/F814900D-2F88-4C42-A037-8984F383FD7B.svg')
+    no-repeat;
+  opacity: 1 !important;
+}
+
+#okta-sign-in .error-16-red:before,
+#okta-sign-in .error-16-small:before {
+  content: '';
+}
+
+#okta-sign-in .error-16-red,
+#okta-sign-in .error-16-small {
+  height: 24px;
+  width: 24px;
+  left: -10px !important;
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/E8F0F7FF-5CF8-41AA-8221-B7D108F8E390.svg')
+    no-repeat;
+}
+
+.infobox-error .error-16 {
+  height: 24px;
+  width: 24px;
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/E8F0F7FF-5CF8-41AA-8221-B7D108F8E390.svg')
+    no-repeat !important;
+  margin-top: 10px !important;
+}
+
+#okta-sign-in .o-form .input-fix {
+  border: none;
+}
+
+#okta-sign-in .o-form-input {
+  margin-bottom: 20px;
+}
+
+.o-form-fieldset-container {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.floating-label {
+  position: absolute !important;
+  font-size: 12px !important;
+  top: -5px !important;
+  color: #53565a !important;
+  padding-left: 8px !important;
+}
+
+.button {
+  font-size: 1rem !important;
+  line-height: 24px !important;
+  letter-spacing: 0px !important;
+}
+
+.o-form-has-errors input:not([type='button']) {
+  border-color: #b42c01 !important;
+}
+
+.okta-form-input-error.o-form-input-error {
+  color: #b42c01 !important;
+  font-size: 1rem !important;
+  line-height: 24px;
+}
+
+.first-time {
+  padding: 0px 40px !important;
+}
+
+.first-time .icon-info {
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/ABB1B3B1-6728-49E7-B1A2-91B3290569D5.svg')
+    no-repeat !important;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+#okta-sign-in .o-form-has-errors .infobox-error {
+  margin: 15px 5px;
+  /* width: 248px;
+    height: 96px;
+    margin: 0 0 0 8px; */
+  font-family: BentonSans;
+  font-size: 16px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #b42c01;
+}
+
+#okta-sign-in .error-16::before {
+  height: 24px;
+  content: none !important;
+  width: 24px;
+  left: -10px !important;
+  background: url('https://cdn.zeplin.io/5d2df58159385a383edd7b92/assets/E8F0F7FF-5CF8-41AA-8221-B7D108F8E390.svg')
+    no-repeat;
+}
+
+.first-time .info-content {
+  margin-left: 40px !important;
+}
+
+.o-form-input .o-form-explain {
+  text-align: left !important;
+  font-size: 14px !important;
+}
+
+.password-reset .okta-form-subtitle.o-form-explain {
+  display: none !important;
+}
+
+.reset-password-policies {
+  text-align: left !important;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+}
+
+.footer {
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  font-family: BentonSans;
+  line-height: 1.5;
+}
+
+.footer-links.flex.flex-row {
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.footer-copyrights {
+  padding-bottom: 20px;
+  line-height: normal;
+}
+
+.footer-terms {
+  line-height: normal;
+}
+
+#blockColorblindContent {
+  display: none;
+}
+
+.show-in-mobile {
+  display: none !important;
+}
+
+.hide-in-mobile {
+  display: flex !important;
+}
+
+.first-time-here {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.5 !important;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00175a;
+  margin: 2px 10px 14px 10px !important;
+}
+
+.get-start {
+  width: 180px;
+  padding: 8px;
+  border: 1px solid #006fcf;
+  background-color: #ffffff;
+  margin: 10px 10px 64px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006fcf !important;
+  height: 50px;
+  cursor: pointer;
+}
+
+.icon .icon-16 .error-16-small {
+  content: none;
+}
+
+#okta-sign-in.auth-container .button-primary {
+  width: 250px !important;
+}
+
+#okta-sign-in.auth-container .o-form-explain.okta-form-input-error {
+  padding-top: 8px;
+  font-size: 14px !important;
+  padding-left: 0;
+}
+
+#okta-sign-in .o-form-input-error .icon-16 {
+  display: none;
+}
+
+#okta-sign-in .o-form-fieldset {
+  margin-bottom: 0;
+}
+
+#okta-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#okta-sign-in {
+  margin-top: 40px !important;
+}
+
+#okta-sign-in .help-wrap .infobox.infobox-error:before,
+#okta-sign-in .infobox-error:before,
+#okta-sign-in .infobox.infobox-subtle.infobox-error:before {
+  background-color: transparent;
+}
+
+#okta-sign-in .infobox,
+#okta-sign-in .infobox-md {
+  border-width: 0px;
+}
+
+#okta-sign-in .error-16:before {
+  content: '\e055';
+  color: red;
+}
+
+.apploginbanner-container {
+  display: none;
+}
